@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Reddit+Mono:wght@200..900&display=swap');
+
+:root {
+    --heading-color: #57006b;
+    --data-heading-color: #41c34e;
+    --font-size: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Reddit Mono', monospace;
+    font-size: var(--font-size);
+}
+
+header,
+footer {
+    background-color: var(--heading-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.wrapper {
+    position: absolute;
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+    width: 100%;
+    height: 90vh;
+}
+
+.data {
+    grid-area: 1 / 1 / 4 / 3;
+    background-color: rgba(240, 248, 255, .85);
+}
+
+.weather {
+    grid-area: 4 / 7 / 6 / 9;
+    background-color: rgba(240, 248, 255, .85);
+}
+
+.data h2,
+.weather h2 {
+    margin-top: 15px;
+    margin-left: -15px;
+    width: 75%;
+    padding: 15px 40px;
+    background-color: var(--data-heading-color);
+}
+
+.data ul,
+.weather ul {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.weather h2::after {
+    content: url(../images/place/weather-icon.svg);
+    width: 36px;
+    height: 36px;
+    display: inline-block
+}
+
+@media screen and (max-width: 750px) {
+    .wrapper {
+        position: inherit;
+        padding: 20px 50px;
+        display: grid;
+        grid-template-columns: repeat(9, minmax(0, 1fr));
+        grid-template-rows: repeat(5, minmax(0, 1fr));
+        width: 100%;
+        height: 90vh;
+    }
+
+    .data {
+        grid-area: 1 / 1 / 4 / 3;
+        background-color: rgba(240, 248, 255, .85);
+    }
+
+    .weather {
+        grid-area: 4 / 7 / 6 / 9;
+        background-color: rgba(240, 248, 255, .85);
+    }
+
+    .data h2,
+    .weather h2 {
+        margin-top: 15px;
+        margin-left: -15px;
+        width: 75%;
+        padding: 15px 40px;
+        background-color: var(--data-heading-color);
+    }
+
+    .data ul,
+    .weather ul {
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
+    .weather h2::after {
+        content: url(../images/place/weather-icon.svg);
+        width: 36px;
+        height: 36px;
+        display: inline-block
+    }
+
+}

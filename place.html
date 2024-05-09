@@ -38,7 +38,8 @@
             </div>
 
             <div class="weather">
-                <h2>Weather</h2>
+                <h2>Weather<img src="./images/place/weather-icon.svg" alt="Weather icon" width="36" height="36"></h2>
+
                 <ul>
                     <li>Temperature: 10 C</li>
                     <li>Conditions: Partly Cloudy</li>
@@ -48,7 +49,12 @@
             </div>
         </div>
 
-        <img src="./images/place/ukraine-large.webp" alt="Ukraine">
+        <picture>
+            <source srcset="./images/place/ukraine-large.webp" media="(min-width: 1000px)">
+            <source srcset="./images/place/ukraine-medium.webp" media="(min-width: 550px)">
+            <img src="./images/place/ukraine-small.webp" alt="Ukraine">
+        </picture>
+
     </main>
 
     <footer>

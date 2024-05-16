@@ -17,65 +17,31 @@
             <h1>Temple Album</h1>
             <a href="#" id="menu"></a>
             <ul id="navigation" class="navigation">
-                <li><a href="" class="active">Home</a></li>
-                <li><a href="">Old</a></li>
-                <li><a href="">New</a></li>
-                <li><a href="">Large</a></li>
-                <li><a href="">Small</a></li>
+                <li><button class="active" onclick="filterTemples('home')">Home</button></li>
+                <li><button onclick="filterTemples('old')">Old</button></li>
+                <li><button onclick="filterTemples('new')">New</button></li>
+                <li><button onclick="filterTemples('large')">Large</button></li>
+                <li><button onclick="filterTemples('small')">Small</button></li>
             </ul>
         </nav>
 
         <ul class="mobile-navigation">
-            <li><a href="" class="active">Home</a></li>
-            <li><a href="">Old</a></li>
-            <li><a href="">New</a></li>
-            <li><a href="">Large</a></li>
-            <li><a href="">Small</a></li>
+            <li><button class="active" onclick="filterTemples('home')">Home</button></li>
+            <li><button onclick="filterTemples('old')">Old</button></li>
+            <li><button onclick="filterTemples('new')">New</button></li>
+            <li><button onclick="filterTemples('large')">Large</button></li>
+            <li><button onclick="filterTemples('small')">Small</button></li>
         </ul>
 
     </header>
 
     <main>
         <h2>Home</h2>
-        <div class="wrapper">
-            <figure>
-                <img src="./images/filtered-temples/atlanta.webp" alt="Temple Image">
-                <figcaption>Atlanta Georgia</figcaption>
-            </figure>
-            <figure>
-                <img src="./images/filtered-temples/atlanta.webp" alt="Temple Image">
-                <figcaption>Atlanta Georgia</figcaption>
-            </figure>
-            <figure>
-                <img src="./images/filtered-temples/atlanta.webp" alt="Temple Image">
-                <figcaption>Atlanta Georgia</figcaption>
-            </figure>
-            <figure>
-                <img src="./images/filtered-temples/atlanta.webp" alt="Temple Image">
-                <figcaption>Atlanta Georgia</figcaption>
-            </figure>
-            <figure>
-                <img src="./images/filtered-temples/atlanta.webp" alt="Temple Image">
-                <figcaption>Atlanta Georgia</figcaption>
-            </figure>
-            <figure>
-                <img src="./images/filtered-temples/atlanta.webp" alt="Temple Image">
-                <figcaption>Atlanta Georgia</figcaption>
-            </figure>
-            <figure>
-                <img src="./images/filtered-temples/atlanta.webp" alt="Temple Image">
-                <figcaption>Atlanta Georgia</figcaption>
-            </figure>
-            <figure>
-                <img src="./images/filtered-temples/atlanta.webp" alt="Temple Image">
-                <figcaption>Atlanta Georgia</figcaption>
-            </figure>
-            <figure>
-                <img src="./images/filtered-temples/atlanta.webp" alt="Temple Image">
-                <figcaption>Atlanta Georgia</figcaption>
-            </figure>
+
+        <div class="wrapper temple-container" id="temple-container">
 
         </div>
+
     </main>
 
     <footer>

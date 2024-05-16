@@ -6,15 +6,17 @@
         list-style-type: none;
     }
 
-    header nav ul li a {
+    header nav ul li button {
         display: block;
         color: white;
         text-decoration: none;
+        background-color: inherit;
+        border: 0px;
         padding: 1rem;
         font-size: 22px;
     }
 
-    header nav ul li a:hover {
+    header nav ul li button:hover {
         padding-top: 2px;
         font-weight: 700;
     }
@@ -36,6 +38,5 @@
 @media screen and (min-width: 1024px) {
     .wrapper {
         grid-template-columns: repeat(3, minmax(0, 1fr));
-
     }
 }

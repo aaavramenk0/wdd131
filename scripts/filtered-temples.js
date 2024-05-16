@@ -80,7 +80,7 @@ const temples = [{
 
 
 const createTempleCard = (temple) => {
-    const card = document.createElement('div');
+    const card = document.createElement('figure');
     card.classList.add('temple-card');
 
     const img = document.createElement('img');
@@ -88,7 +88,7 @@ const createTempleCard = (temple) => {
     img.alt = temple.templeName;
     img.loading = 'lazy';
 
-    const name = document.createElement('h2');
+    const name = document.createElement('figcaption');
     name.textContent = temple.templeName;
 
     const location = document.createElement('p');

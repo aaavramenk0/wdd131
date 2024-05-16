@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Reddit+Mono:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Reddit Mono', monospace;
+    font-size: 18px;
+}
+
+header,
+footer {
+    color: white;
+    text-align: center;
+    background-color: #57006b;
+}
+
+header h1 {
+    padding: 20px;
+}
+
+header nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: none
+}
+
+
+
+#menu {
+    display: block;
+    font-size: 70px;
+    font-weight: 700;
+    padding-right: 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background-color: inherit;
+    color: #fff;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    font-size: 45px;
+    content: "X";
+}
+
+.mobile-navigation {
+    background-color: #515151;
+    display: none;
+    flex-direction: column;
+}
+
+.show {
+    display: flex;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.wrapper {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 25px;
+}
+
+.wrapper figure img {
+    max-width: 90%;
+}
+
+footer {
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer #lastmodified {
+    color: yellow;
+}
+
+
+
+.mobile-navigation li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.mobile-navigation li {
+    padding: 10px;
+}
+
+.active {
+    color: yellow;
+}

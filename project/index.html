@@ -14,14 +14,14 @@
 <body>
     <header>
         <nav>
-            <img src="./images/logo.png" alt="Logo icon">
+            <img src="./images/logo.png" alt="Logo icon" loading="lazy">
             <ul>
                 <li><a href="/project/">Home</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Tours</a></li>
+                <li><a href="#aboutus">About us</a></li>
+                <li><a href="#tours">Tours</a></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">Sale</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#contacts">Contact</a></li>
             </ul>
             <a href="" class="nav-button">Book now</a>
         </nav>
@@ -30,8 +30,97 @@
     <main>
         <section class="hero">
             <h1>Travelling around the world</h1>
-            <h2>At Wanderlust Travel Agency, we turn your travel dreams into reality. From sun-kissed beaches to vibrant
-                cities and thrilling expeditions, our tailored packages ensure an unforgettable journey.</h2>
+            <h2>At Wanderlust Travel Agency, we turn your travel dreams into reality. From sun-kissed beaches to vibrant cities and thrilling expeditions, our tailored packages ensure an unforgettable journey.</h2>
+            <a href="" class="hero-button">Explore Tours</a>
+
+            <form action="" method="get">
+                <div class="form-grid-wrapper">
+                    <div class="form-wrapper">
+                        <label for="destination">Search destination*</label>
+                        <input type="text" name="destination" id="destination" required
+                            placeholder="e.g. New York city">
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="destination">Amount of people*</label>
+                        <input type="text" name="destination" id="destination" required placeholder="e.g. 4">
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="destination">Check in date*</label>
+                        <input type="date" name="destination" id="destination" required>
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="destination">Check out date*</label>
+                        <input type="date" name="destination" id="destination" required>
+                    </div>
+                </div>
+                <input type="submit" name="submit" id="submit" class="form-button" value="Inquire now">
+            </form>
+        </section>
+
+        <section class="popular" id="tours">
+            <h2>Popular destinations</h2>
+            <div class="popular-grid-wrapper">
+                <div class="popular-1">
+                    <h3>Thailand</h3>
+                    <div class="popular-rating">
+                        <h4>Bangkok</h4>
+                        <p>⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="popular-2">
+                    <h3>Norway</h3>
+                    <div class="popular-rating">
+                        <h4>Besseggen Ridge</h4>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="popular-3">
+                    <h3>New Zealand</h3>
+                    <div class="popular-rating">
+                        <h4>Oxolotan City</h4>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="popular-4">
+                    <h3>Singapore</h3>
+                    <div class="popular-rating">
+                        <h4>Marina Bay Sand</h4>
+                        <p>⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="popular-button">More Destinations</a>
+        </section>
+
+        <section class="aboutus" id="aboutus">
+            <h2>About us</h2>
+            <p>At Wanderlust Travel Agency, we are passionate about creating unforgettable travel experiences. With years of expertise and a deep love for exploration, we specialize in crafting personalized journeys that cater to every traveler's unique desires.</p>
+            <h3>Our Mission</h3>
+            <p>We believe travel is more than just visiting new places—it's about creating lasting memories,experiencing diverse cultures, and discovering the beauty of our world. Our mission is to make your travel dreams come true by providing exceptional service, expert guidance, and exclusive access to the best destinations and experiences.</p>
+            <h3>Why Travel with Us?</h3>
+            <div class="about-grid-wrapper">
+                <div class="item-flex-wrapper">
+                    <img src="./images/services-icon.webp" alt="Services icon" loading="lazy">
+                    <h3>Personalized Service</h3>
+                    <p>We tailor every itinerary to match your interests and preferences</p>
+                </div>
+                <div class="item-flex-wrapper">
+                    <img src="./images/team-icon.webp" alt="Team icon" loading="lazy">
+                    <h3>Experienced Team</h3>
+                    <p>Our travel experts and guides are passionate and knowledgeable</p>
+                </div>
+                <div class="item-flex-wrapper">
+                    <img src="./images/planning-icon.webp" alt="Planning icon" loading="lazy">
+                    <h3>Hassle-Free Planning</h3>
+                    <p>From start to finish, we handle all the details for a seamless trip</p>
+                </div>
+                <div class="item-flex-wrapper">
+                    <img src="./images/benefits-icon.webp" alt="Benefits icon" loading="lazy">
+                    <h3>Exclusive Benefits</h3>
+                    <p>Enjoy special deals and unique experiences not found elsewhere</p>
+                </div>
+            </div>
+            <a href="#contacts" class="about-button">Contact Us</a>
         </section>
     </main>
 

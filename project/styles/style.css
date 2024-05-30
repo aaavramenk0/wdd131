@@ -22,6 +22,11 @@
     --headings: "Handlee", cur
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 120px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -40,6 +45,9 @@ a {
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: var(--accent-hover);
     padding: 15px 30px;
     height: 100px;
@@ -69,7 +77,8 @@ nav ul li a:hover {
 .nav-button {
     background-color: var(--links-button);
     border: 2px solid var(--links-button);
-    padding: 10px 40px;
+    border-radius: 50px;
+    padding: 10px 50px;
     align-self: center;
     font-weight: 700;
     font-size: 20px;
@@ -86,11 +95,200 @@ main {
 }
 
 .hero {
-    padding-top: 50px;
+    padding-top: 150px;
 }
 
 .hero h1 {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 75px;
     text-align: center;
+    font-variant: small-caps;
+}
+
+.hero h2 {
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.hero-button {
+    display: block;
+    margin: auto;
+    max-width: 250px;
+    background-color: var(--links-button);
+    border: 2px solid var(--links-button);
+    border-radius: 50px;
+    padding: 10px 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.hero-button:hover {
+    background-color: var(--accent-hover);
+    border: 2px solid var(--accent-hover);
+}
+
+form {
+    margin-top: 25px;
+    border: 1px solid white;
+    background: white;
+    padding: 25px;
+}
+
+.form-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-button {
+    display: block;
+    margin: auto;
+    max-width: 250px;
+    background-color: var(--secondary-highlights);
+    border: 2px solid var(--secondary-highlights);
+    border-radius: 50px;
+    padding: 10px 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+#submit {
+    color: white;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background: var(--headings-primary-text);
+    border: 2px solid var(--headings-primary-text);
+}
+
+form input {
+    font-family: var(--body-text);
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    background: #ededed;
+}
+
+
+.popular,
+.aboutus {
+    margin: 50px 0;
+}
+
+.popular h2,
+.aboutus h2 {
+    font-size: 40px;
+    font-variant: small-caps;
+    margin-bottom: 15px;
+}
+
+.popular-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.popular-1 {
+    height: 500px;
+    grid-area: 1 / 1 / 3 / 2;
+    background-image: url('../images/bangkok.webp');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popular-2 {
+    height: 500px;
+    grid-area: 1 / 2 / 3 / 3;
+    background-image: url('../images/norway.webp');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popular-3 {
+    height: 250px;
+    grid-area: 1 / 3 / 2 / 5;
+    background-image: url('../images/new-zealand.webp');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popular-4 {
+    height: 250px;
+    grid-area: 2 / 3 / 3 / 5;
+    background-image: url('../images/singapore.webp');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popular-1 h3,
+.popular-2 h3,
+.popular-3 h3,
+.popular-4 h3 {
+    background: var(--background);
+    width: fit-content;
+    padding: 10px;
+    margin: 10px 0px 0px 15px;
+}
+
+.popular-rating {
+    margin: 0px 0px 25px 25px;
+    background: var(--background);
+    font-size: 20px;
+    width: fit-content;
+    padding: 10px;
+}
+
+.popular-button,
+.about-button {
+    display: block;
+    margin: 25px auto;
+    max-width: 350px;
+    background-color: var(--links-button);
+    border: 2px solid var(--links-button);
+    border-radius: 50px;
+    padding: 10px 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.aboutus p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.aboutus h3 {
+    font-size: 22px;
+}
+
+.about-grid-wrapper {
+    margin-top: 15px;
+    display: grid;
+    text-align: center;
+    gap: 35px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }

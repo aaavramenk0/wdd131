@@ -1,0 +1,96 @@
+/* 
+- Lotus Green: #317312 (used for headings, primary text)
+- Green Scallion: #6EBB2D (used for secondary elements, highlights)
+- Wafer Brown: #DED6C9 (used for backgrounds)
+- Blue Isle: #24BAEC (used for accents, hover states)
+- Capri Blue: #166EF3 (used for buttons, links)
+
+- Reddit Mono (used for body text)
+- Handlee (used for headings)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Reddit+Mono:wght@200..900&display=swap');
+
+:root {
+    --headings-primary-text: #317312;
+    --secondary-highlights: #6EBB2D;
+    --background: #DED6C9;
+    --accent-hover: #24BAEC;
+    --links-button: #166EF3;
+
+    --body-text: 'Reddit Mono', monospace;
+    --headings: "Handlee", cur
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-text);
+    background-color: var(--background);
+    color: var(--headings-primary-text);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    background-color: var(--accent-hover);
+    padding: 15px 30px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    font-weight: 700;
+    border-bottom: 3px solid var(--links-button);
+}
+
+.nav-button {
+    background-color: var(--links-button);
+    border: 2px solid var(--links-button);
+    padding: 10px 40px;
+    align-self: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav-button:hover {
+    background-color: var(--accent-hover);
+    border: 2px solid var(--links-button);
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero {
+    padding-top: 50px;
+}
+
+.hero h1 {
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+}

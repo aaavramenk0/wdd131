@@ -33,7 +33,7 @@
             <h2>At Wanderlust Travel Agency, we turn your travel dreams into reality. From sun-kissed beaches to vibrant cities and thrilling expeditions, our tailored packages ensure an unforgettable journey.</h2>
             <a href="" class="hero-button">Explore Tours</a>
 
-            <form action="" method="get">
+            <form action="" method="get" id="inquiryForm">
                 <div class="form-grid-wrapper">
                     <div class="form-wrapper">
                         <label for="destination">Search destination*</label>
@@ -42,15 +42,15 @@
                     </div>
                     <div class="form-wrapper">
                         <label for="destination">Amount of people*</label>
-                        <input type="text" name="destination" id="destination" required placeholder="e.g. 4">
+                        <input type="text" name="people" id="people" required placeholder="e.g. 4">
                     </div>
                     <div class="form-wrapper">
                         <label for="destination">Check in date*</label>
-                        <input type="date" name="destination" id="destination" required>
+                        <input type="date" name="checkin" id="checkin" required>
                     </div>
                     <div class="form-wrapper">
                         <label for="destination">Check out date*</label>
-                        <input type="date" name="destination" id="destination" required>
+                        <input type="date" name="checkout" id="checkout" required>
                     </div>
                 </div>
                 <input type="submit" name="submit" id="submit" class="form-button" value="Inquire now">
@@ -163,30 +163,49 @@
             <h2>Our Recent Posts</h2>
             <div class="blog-grid-wrapper">
                 <div class="blog-item">
-                    <img src="" alt="Blog post 1">
+                    <div><img src="./images/blog-1.webp" alt="Blog post 1" loading="lazy"></div>
                     <h3>Life is a beautiful journey, not a destination</h3>
 
                     <p>Demoteam | Aug 17, 2024 | No Comments</p>
                 </div>
                 <div class="blog-item">
-                    <img src="" alt="Blog post 2">
+                    <div><img src="./images/blog-2.webp" alt="Blog post 2" loading="lazy"></div>
                     <h3>Take only memories, leave only footprints</h3>
 
                     <p>Demoteam | Feb 21, 2024 | No Comments</p>
                 </div>
                 <div class="blog-item">
-                    <img src="" alt="Blog post 3">
+                    <div><img src="./images/blog-3.webp" alt="Blog post 3" loading="lazy"></div>
                     <h3>Journeys are best measured in new friends</h3>
 
                     <p>Demoteam | June 29, 2024 | No Comments</p>
+                </div>
+            </div>
+            <a href="" class="blog-button">Explore our blog</a>
+        </section>
+
+        <section class="contacts" >
+            <h2 id="contacts">Contact Us</h2>
+            <div class="contacts-flex-wrapper">
+                <div>
+                    <a href="tel: +18056457020"><strong>Phone #:</strong> +1 805 645 7020</a><br>
+                    <a href="mailto: info@wanderlust.com"><strong>Email:</strong> info@wanderlust.com</a>
+                    <p><strong>Address:</strong> 2205 L St, Sacramento, CA 95816</p>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1162.1644051153949!2d-121.47907229993208!3d38.574927433565435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ad0c311d29dc1%3A0x4119ecd4700684e3!2s2205%20L%20St%2C%20Sacramento%2C%20CA%2095816!5e0!3m2!1sen!2sus!4v1717143553409!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-
+        <p>Privacy Policy | Terms & Conditions | FAQ</p>
+        <img src="./images/logo.png" alt="Logo" loading="lazy" width="100px">
+        <p>&copy;<span id="year"></span> Wanderlust Travel Agency. All rights reserved</p>
     </footer>
+    
+    <button id="scrollToTop" class="scroll-to-top">↑</button>
 
     <script src="./scripts/main.js" defer></script>
 </body>
